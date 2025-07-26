@@ -6,7 +6,8 @@ import os
 
 
 config = configparser.ConfigParser()
-config.read('config.ini')
+dirname = os.path.dirname(__file__)
+config.read(os.path.join(dirname,'config.ini'))
 
 COMPANIES = eval(config['Companies']['COMPANIES'])
 
