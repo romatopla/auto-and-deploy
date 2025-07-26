@@ -5,6 +5,9 @@ import os
 import yfinance as yf
 from pgdb import PGDatabase
 
+dirname = os.path.dirname(__file__) # __file__ - текущий файл
+print(dirname)
+
 config = configparser.ConfigParser()
 config.read("config.ini")
 
